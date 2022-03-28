@@ -21,7 +21,7 @@ const drawColumn = (column, index, pkCount, count) => {
       }
       <td sides="tb" align="left" rowspan="5">${
         column.name
-      }: <font color="gray">${column.type}</font></td>
+      }<font color="#363636">: ${column.type}</font></td>
       <td align="right" sides="tb" rowspan="5">${modifiers.join(",")}</td>
       <td sides="r" cellpadding="0" port="${column.name}_out_0"></td>
     </tr>
