@@ -28,6 +28,31 @@ Script watches for changes in your sql and updates png ons save.
 > npx sql-vis <filename.sql> <output-image.png>
 ```
 
+## Example SQL:
+
+```sql
+CREATE TABLE item (
+  id INT NOT NULL,
+  PRIMARY KEY (id),
+  descr VARCHAR(255)
+);
+
+CREATE TABLE manufacturer_item (
+  item_id INT NOT NULL,
+  manufacturer_id INT NOT NULL,
+  quantity INT NOT NULL,
+  PRIMARY KEY (item_id, manufacturer_id),
+  FOREIGN KEY (item_id) REFERENCES item(id),
+  FOREIGN KEY (manufacturer_id) REFERENCES manufacturer(id)
+);
+
+CREATE TABLE manufacturer (
+  id INT NOT NULL,
+  PRIMARY KEY(id),
+  phone INT NOT NULL
+);
+```
+
 ## Supported SQL
 
 ### Statements
