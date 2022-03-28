@@ -1,6 +1,6 @@
 {
   "name": "sql-vis",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "bin": {
     "sketchviz": "./main.js"
   },
