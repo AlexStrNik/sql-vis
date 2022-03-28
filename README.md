@@ -66,6 +66,7 @@ CREATE TABLE manufacturer (
 - `TEXT`
 - `DATETIME`
 - `DECIMAL(<integer>, <integer>)`
+- `DATE`
 
 ### Table constraints
 
@@ -81,7 +82,7 @@ CREATE TABLE manufacturer (
 
 ### One more thing
 
-- Trailing commas are not supported yet :(
+- Trailing commas are supportedonly inside `CREATE TABLE` :(
 - Semicolomns are required after `CREATE TABLE` statement
 
 ### How Do They Do It

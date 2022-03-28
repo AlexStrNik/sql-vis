@@ -36,7 +36,7 @@ const parseTable = (table) => {
 const parseRelationship = (relationship, table, tables) => {
   if (tables[relationship.foreignTable] === undefined) {
     throw new Error(
-      `Relationship point to undefined table ${relationship.foreignTable}`
+      `Relationship points to undefined table ${relationship.foreignTable}`
     );
   }
   if (
@@ -44,7 +44,15 @@ const parseRelationship = (relationship, table, tables) => {
     undefined
   ) {
     throw new Error(
-      `Relationship point to undefined table column ${relationship.foreignColumn}`
+      `Relationship points to undefined table column ${relationship.foreignTable}.${relationship.foreignColumn}`
+    );
+  }
+
+  if (tables[table.name].columns[relationship.selfColumn] === undefined) {
+    throw new Error(
+      `Relationship points to undefined table column ${tables[table.name]}.${
+        relationship.selfColumn
+      }`
     );
   }
 
