@@ -8,6 +8,7 @@
   "scripts": {
     "pegjs": "pegjs -o ast.js sql.pegjs"
   },
+  "repository": "https://github.com/AlexStrNik/sql-vis",
   "devDependencies": {
     "pegjs": "^0.10.0"
   }
