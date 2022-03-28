@@ -5,7 +5,7 @@ const { draw } = require("./graphvis");
 
 function main() {
   if (process.argv.length != 4) {
-    console.log("Usage: sql-vis <input.sql> <output.svg>");
+    console.log("Usage: sql-vis <input.sql> <output.png>");
     process.exit(1);
   }
 
