@@ -14,7 +14,7 @@ You should have `graphviz` installed.
 
 ### Windows
 
-```
+```bash
 > choco install graphviz
 ```
 
@@ -24,7 +24,7 @@ Other installatiom methods can be found on `Graphviz` [website](https://graphviz
 
 Script watches for changes in your sql and updates png ons save.
 
-```
+```bash
 > npx sql-vis <filename.sql> <output-image.png>
 ```
 
