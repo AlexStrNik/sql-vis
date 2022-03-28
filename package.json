@@ -1,0 +1,18 @@
+{
+  "name": "sql-vis",
+  "version": "0.0.1",
+  "bin": {
+    "sketchviz": "./main.js"
+  },
+  "author": "alexstrnik",
+  "scripts": {
+    "pegjs": "pegjs -o ast.js sql.pegjs"
+  },
+  "dependencies": {
+    "jsdom": "^18.0.0",
+    "roughjs": "^4.4.1"
+  },
+  "devDependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
